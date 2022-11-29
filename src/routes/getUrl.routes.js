@@ -7,11 +7,7 @@ const router = Router()
 
 router.get(
   '/',
-  [
-    // check('url', 'URL is required.').not().isEmpty(),
-    check('url', 'URL not allowed').isURL(),
-    validateResults
-  ],
+  [check('url', 'URL required or not allowed').isURL(), validateResults],
   getUrl
 )
 
