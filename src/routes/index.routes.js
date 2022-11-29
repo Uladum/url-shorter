@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import getUrl from './getUrl.routes.js'
+import url from './url.routes.js'
 
 const router = Router()
 
-router.use('/url', getUrl)
+router.use('/url', url)
 
 export default router
