@@ -1,6 +1,8 @@
 import { Router } from 'express'
-import { router as genericRoutes } from './generic.routes.js'
+import getUrl from './getUrl.routes.js'
 
-export const router = Router()
+const router = Router()
 
-router.use('/', genericRoutes)
+router.use('/url', getUrl)
+
+export default router

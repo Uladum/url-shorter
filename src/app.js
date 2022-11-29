@@ -3,9 +3,9 @@ import morgan from 'morgan'
 import dotenv from 'dotenv'
 dotenv.config()
 
-import { router } from './routes/index.routes.js'
+import indexRoutes from './routes/index.routes.js'
 
-export const app = express()
+const app = express()
 
 // Settings
 app.set('port', 3000)
@@ -16,4 +16,6 @@ app.use(express.static('public'))
 app.use(morgan('dev'))
 
 // Routes
-app.use('/api', router)
+app.use('/api', indexRoutes)
+
+export default app

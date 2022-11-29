@@ -1,4 +1,4 @@
-import { app } from './src/app.js'
+import app from './src/app.js'
 import './src/db/db.js'
 
 const port = app.get('port')
