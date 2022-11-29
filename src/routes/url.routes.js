@@ -5,7 +5,7 @@ import { createCode } from '../controllers/url.controller.js'
 
 const router = Router()
 
-router.get(
+router.post(
   '/',
   [check('url', 'URL required or not allowed').isURL(), validateResults],
   createCode

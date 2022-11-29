@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 const { Schema, model } = mongoose
 
-const shortUrlSchema = new Schema(
+const codeSchema = new Schema(
   {
     url: { type: String, required: true, unique: true },
     code: { type: String, required: true, unique: true }
@@ -11,4 +11,4 @@ const shortUrlSchema = new Schema(
   }
 )
 
-export default model('shortUrl', shortUrlSchema)
+export default model('code', codeSchema)
