@@ -1,9 +1,9 @@
 export const getUrl = async url => {
   try {
-    console.log(url)
+    const shortUrl = Math.random().toString(36).substr(2, 5)
 
-    return { status: 200, data: { url } }
+    return { status: 200, data: { shortUrl } }
   } catch (err) {
-    return { status: 500, data: { msg: 'generic() error', error: err } }
+    return { status: 500, data: { msg: 'getUrl() error', error: err } }
   }
 }
