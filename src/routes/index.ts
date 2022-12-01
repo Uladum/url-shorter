@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import url from './url.routes.js'
+import url from './url.js'
 
 const router = Router()
 

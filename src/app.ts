@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import dotenv from 'dotenv'
 dotenv.config()
 
-import indexRoutes from './routes/index.routes.js'
+import indexRoutes from './routes/index.js'
 
 const app = express()
 

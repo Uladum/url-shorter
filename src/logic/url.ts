@@ -1,4 +1,4 @@
-import Code from '../models/shortUrl.model.js'
+import Code from '../models/url.js'
 
 export const getCode = async code => {
   try {
