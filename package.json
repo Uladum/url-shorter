@@ -2,7 +2,6 @@
   "name": "urlshorter",
   "version": "0.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev:tsc": "tsc --watch",
     "dev": "node --watch ./dist/index.js"
