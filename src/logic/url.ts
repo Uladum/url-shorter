@@ -14,7 +14,7 @@ export const getCode = async (code: string) => {
 
 export const createCode = async (url: string) => {
   try {
-    const code = Math.random().toString(36).substr(2, 5)
+    const code = Math.random().toString(36).substring(2, 7)
 
     const existentUrl = await Code.findOne({ url }).select('url code -_id')
     if (existentUrl)
