@@ -7,7 +7,7 @@
     "dev": "node --watch ./dist/index.js"
   },
   "author": "Miguel García Gil",
-  "license": "ISC",
+  "license": "GPLV3",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
